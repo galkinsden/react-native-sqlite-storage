@@ -67,7 +67,7 @@ static void sqlite_regexp(sqlite3_context* context, int argc, sqlite3_value** va
 
 void toLower(sqlite3_context *context, int argc, sqlite3_value **argv) {
     if (argc != 1 || sqlite3_value_type(argv[0]) != SQLITE_TEXT) {
-        sqlite3_result_error(context, "Invalid argument", -1);
+        sqlite3_result_text(context, @"", -1, SQLITE_TRANSIENT);
         return;
     }
 
