@@ -50,7 +50,7 @@ public class SQLitePlugin extends ReactContextBaseJavaModule {
 
     public static final String TAG = SQLitePlugin.class.getSimpleName();
 
-    private static final String PLUGIN_NAME = "SQLite";
+    public static final String PLUGIN_NAME = "SQLite";
 
     private static final Pattern FIRST_WORD = Pattern.compile("^\\s*(\\S+)",
             Pattern.CASE_INSENSITIVE);
